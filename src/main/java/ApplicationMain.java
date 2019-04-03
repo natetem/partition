@@ -1,12 +1,11 @@
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class ApplicationMain {
 
-    public List<int[]> partition(int [] listIn, int n){
-        System.out.println("**** Number of elements **** : " + n );
+    public List<int[]> partition(int[] listIn, int n) {
+        System.out.println("**** Number of elements **** : " + n);
         int sizeOfList = listIn.length;
         int z = (int) Math.ceil((double) sizeOfList / n);
         System.out.println("**** Length of list*** : " + z);
@@ -21,10 +20,4 @@ public class ApplicationMain {
         list.stream().map(s -> Arrays.toString(s)).forEach(System.out::println);
         return list;
     }
-
-
-
-
-
-
 }
